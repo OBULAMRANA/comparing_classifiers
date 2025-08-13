@@ -1,25 +1,44 @@
 #  Assignment 17.1: Comparing Classifiers
 ## Author: Rana Obulam
+### Project Overview
+Compare the performance of the 4 classification algorithms and pridict the term deposits on features.
+
+  K Nearest Neighbor
+  
+  Logistic Regression
+  
+  Decision Trees
+  
+  Support Vector Machines
+  
 ### Dataset information 
+The assignment data is to analyze the  banking institution collection of the results of multiple marketing campaigns.
+
+Data Source: [https://github.com/OBULAMRANA/accept_coupon/blob/main/coupons.csv](https://github.com/OBULAMRANA/comparing_classifiers/blob/main/bank-additional.csv)
+
+Python Code: [https://github.com/OBULAMRANA/accept_coupon/blob/main/accept_coupon.ipynb](https://github.com/OBULAMRANA/comparing_classifiers/blob/main/prompt_III.ipynb)
 
 
 ### Data Understanding & Cleaning
+This dataset has 4119 records. We cleaned the data by removing the columns ('duration', 'contact', 'month', 'day_of_week', 'emp.var.rate', 'cons.price.idx', 'cons.conf.idx', 'euribor3m', 'nr.employed') which are not relavent for analysis.And also the rows ('education_unknown', 'default_unknown', 'housing_unknown','loan_unknown') from catagorical data.
 
 ### Baseline Modeling
 
 ### Creating 4 models for comparision
+Below 4 clasification models created for comparision
+
+K Nearest Neighbor
+
+Logistic Regression
+
+Decision Tree
+
+Support Vector Machine
 
 
 ### Tuning the 4 models for comparision
 
-Model	Train Time	Train Accuracy	Test Accuracy
-0	Logistic Regression	0.465326	0.901062	0.899272
-1	K Nearest Neighbors	0.003912	0.906222	0.878641
-2	Decision Tree	0.019970	0.985129	0.830097
-3	SVM	0.153188	0.900455	0.899272
-4	K Nearest Neighbors (Tuned)	11.713890	0.900152	0.900485
-5	Decision Tree (Tuned)	6.411558	0.905918	0.893204
-6	Logistic Regression (Tuned)	4.122691	0.900455	0.900485
-7	SVM (Tuned)	740.795573	0.900455	0.899272
+Tuned the models K Nearest Neighbor,Logistic Regression,Decision Tree, Support Vector Machine to improve the performance using GridSearchCV
 
 ### Conclusion & Recommendation
+Published the results of the perfomance for each model and evaluated based on the accuracty. By comparing the info before tuning and after, we saw the improments in accuracy after tuning. KNN and LogisticRegression are recommended because they have best accuracy. SVM is also good but it is taking time and resources.
